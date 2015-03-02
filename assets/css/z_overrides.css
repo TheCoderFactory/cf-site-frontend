@@ -1,4 +1,6 @@
-/*$light:										      	   		 #FFF;
+/*--  Colours
+
+$light:										      	   		 #FFF;
 $darknight:										     		#2C3E50;
 $midnight:										     	   	 #333;
 $midnight-light: 			 lighten($midnight, 50);
@@ -7,8 +9,13 @@ $calm:                                #3498DB;
 $subtle:                              #F8F8F8;
 $slime:                               #48A85A;
 $burntsea:                            #487AA8;
-$vibrant:                             #D44F99;*/
+$vibrant:                             #D44F99;
 
+--*/
+
+
+
+/*--  Bg Colours  --*/
 
 .darkknight {
   background-color: #2C3E50;
@@ -27,30 +34,33 @@ $vibrant:                             #D44F99;*/
 }
 
 
+
+/*--  Navbar  --*/
+
 .ct-navbar--dark {
   background-color: #2C3E50;
 }
 
 .ct-pricing .ct-pricing-sep {
-    color: #000;
-  }
+  color: #000;
+}
 
 .ct-pricing .ct-pricing-pricebox {
-         color: #000;
-  }
+    color: #000;
+}
 
-  .ct-pricing .ct-pricing-content {
-    background-color: #000;
-    background-color: #ebeff0;
-  }
+.ct-pricing .ct-pricing-content {
+  background-color: #000;
+  background-color: #ebeff0;
+}
 
-  .ct-pricing .ct-pricing-content .ct-pricing-content-ul {
-max-width: 400px;
-padding: 10px 0;
+.ct-pricing .ct-pricing-content .ct-pricing-content-ul {
+  max-width: 400px;
+  padding: 10px 0;
 }
 
 .ct-pricing .ct-pricing-content .ct-pricing-content-ul li {
-color: #000;
+  color: #000;
 }
 
 .ct-pricing .ct-pricing-content .ct-pricing-content-ul li:before {
@@ -65,7 +75,6 @@ color: #000;
 .ct-tabs--withSlider .nav-tabs > li > a {
 /*  border: 0;*/
 /*  font-size: 20px;*/
-
 }
 
 
@@ -80,7 +89,6 @@ color: #000;
   text-decoration: bold;
 }
 
-
 .ct-tabs--witharrow .nav-tabs > li > a:hover:after,
 .ct-tabs--withSlider .nav-tabs > li > a:hover:after,
 .ct-tabs--witharrow .nav-tabs > li > a:focus:after,
@@ -89,7 +97,6 @@ color: #000;
 .ct-tabs--withSlider .nav-tabs > li > a:active:after {
   bottom: -17px;
 }
-
 
 .ct-widget p {
   color: #fff;
@@ -109,9 +116,22 @@ background-color: #c4c4c4;
 border: solid 2px;
 }
 
+
+
+/*--  Buttons  --*/
+
 .btn-primary{
   border: solid 2px;
 }
+
+.btn-primary:hover {
+  background: #2C3E50;
+  border-color: #2C3E50;
+}
+
+
+
+/*--  Course Card Module  --*/
 
 .ct-coursesList .entry-date, .ct-coursesList .cat-links, .ct-coursesList .cat-links i {
   color: #666666;
@@ -122,7 +142,15 @@ border: solid 2px;
   top: 13px;
 }
 
-.btn-primary:hover {
-  background: #2C3E50;
-  border-color: #2C3E50;
+
+
+
+/*--  Media Queries  --*/
+@media screen and (min-width: 1000px) {
+
+  /*--  Navbar Position  --*/
+  .nav.navbar-nav {
+    position: relative;
+    top: 8px;
+  }
 }
