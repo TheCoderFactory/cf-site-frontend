@@ -188,17 +188,34 @@ select.form-control {
 
 /*--  Workshop Template  --*/
 
-.ct-singleCourse-introLinks .cat-links {
+.ct-singleCourse-introLinks .cat-links, .ct-singleCourse-introLinks .cat-links i, .ct-singleCourse-introLinks .entry-date {
   color: #333;
 }
 
-.ct-singleCourse-introLinks .cat-links i {
-  color: #333;
+.workshop .ct-tabs--witharrow .nav-tabs.nav-justified > .active > a, .workshop .ct-tabs .nav-tabs > li > a:hover, .workshop .ct-pricing .ct-pricing-content .ct-pricing-content-ul li.ct-pricing-content-ul-activesep:before, .workshop .btn-link, .workshop .ct-relatedCoursesSlider .flex-direction-nav a:before {
+  color: #48A85A !important;
 }
 
-.ct-singleCourse-introLinks .entry-date {
-  color: #333;
+.workshop .ct-tabs .nav-tabs > li > a, .workshop .ct-relatedCoursesSlider .flex-direction-nav a {
+  border-color: #48A85A;
 }
+
+.workshop .ct-relatedCoursesSlider .flex-direction-nav a:hover {
+  border-color: #107823;
+}
+
+.workshop .table.table > thead > tr > th {
+  background-color: #48A85A;
+}
+
+/*.ct-pricing-content-ul li {
+  padding: 0 20px;
+}*/
+
+.cf-header {
+  background-position: 50% 0px;
+}
+
 
 
 /*--  Media Queries  --*/
@@ -209,4 +226,5 @@ select.form-control {
     position: relative;
     top: 8px;
   }
+
 }

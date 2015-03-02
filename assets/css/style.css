@@ -7474,7 +7474,7 @@ blockquote + blockquote {
 }
 .ct-pricing .ct-pricing-sep {
   color: #000;
-  background-color: #3eaefa;
+  /*background-color: #3eaefa;*/
   opacity: .8;
   margin: 0;
 }
@@ -12983,7 +12983,7 @@ body {
 /*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3
- * 
+ *
  * http://geedmo.github.com/yamm3
  */
 .yamm-wrapper {
