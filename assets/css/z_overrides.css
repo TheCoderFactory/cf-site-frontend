@@ -21,6 +21,11 @@ $vibrant:                             #D44F99;
   background-color: #2C3E50;
 }
 
+.darkknight:hover {
+  background-color: #0F2031;
+  border-color: #0F2031;
+}
+
 .dirty-gold {
   background-color: #DBC034!important;
 }
@@ -40,6 +45,11 @@ $vibrant:                             #D44F99;
 
 .burntsea {
   background-color: #487AA8;
+}
+
+.burntsea:hover {
+  background: #113A60;
+  border-color: #113A60;
 }
 
 
@@ -69,6 +79,7 @@ $vibrant:                             #D44F99;
 
 .ct-coursesList {
   transition: 0.33s ease-in transform;
+  border-bottom: 5px solid transparent;
 }
 
 .workshop .ct-coursesList:hover {
