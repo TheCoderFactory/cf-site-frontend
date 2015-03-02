@@ -20,15 +20,24 @@ $vibrant:                             #D44F99;
 .darkknight {
   background-color: #2C3E50;
 }
+
 .dirty-gold {
   background-color: #DBC034!important;
 }
+
 .vibrant {
   background-color: #d44F99;
 }
+
 .slime {
   background-color: #48A85A;
 }
+
+.slime:hover {
+  background: #107823;
+  border-color: #107823;
+}
+
 .burntsea {
   background-color: #487AA8;
 }
@@ -39,6 +48,10 @@ $vibrant:                             #D44F99;
 
 .ct-navbar--dark {
   background-color: #2C3E50;
+}
+
+.navbar .navbar-nav li a:hover, .navbar .navbar-nav li a:focus {
+  color: #2C3E50;
 }
 
 .ct-pricing .ct-pricing-sep {
@@ -52,6 +65,24 @@ $vibrant:                             #D44F99;
 .ct-pricing .ct-pricing-content {
   background-color: #000;
   background-color: #ebeff0;
+}
+
+.ct-coursesList {
+  transition: 0.33s ease-in transform;
+}
+
+.workshop .ct-coursesList:hover {
+  border-bottom: 5px solid #48A85A;
+  /*transform: translateY(-5px);*/
+}
+
+.partime .ct-coursesList:hover {
+  border-bottom: 5px solid #487AA8;
+  /*transform: translateY(-5px);*/
+}
+.fulltime .ct-coursesList:hover {
+  border-bottom: 5px solid #2C3E50;
+  /*transform: translateY(-5px);*/
 }
 
 .ct-pricing .ct-pricing-content .ct-pricing-content-ul {
@@ -69,6 +100,10 @@ $vibrant:                             #D44F99;
 
 .ct-princing--second .ct-pricing-content {
   background-color: #000;
+}
+
+.ct-u-bgBlack {
+  background: #2C3E50;
 }
 
 .ct-tabs--witharrow .nav-tabs > li > a,
@@ -103,31 +138,27 @@ $vibrant:                             #D44F99;
 }
 
 select.form-control {
-/*  color: #3eaefa !important;
-*/  background-color: transparent !important;
+/*  color: #3eaefa !important; */
+  background-color: transparent !important;
 
 }
 
 .ct-pageSectionHeader{
-background-color: #c4c4c4;
+  background-color: #c4c4c4;
 }
 
 .ct-tabs--courseList .nav-justified > .active > a, .ct-tabs--courseList .nav-justified > .active > a:hover, .ct-tabs--courseList .nav-justified > .active > a:focus{
-border: solid 2px;
+  border: solid 2px;
 }
 
 
 
 /*--  Buttons  --*/
 
-.btn-primary{
+.btn-primary {
   border: solid 2px;
 }
 
-.btn-primary:hover {
-  background: #2C3E50;
-  border-color: #2C3E50;
-}
 
 
 
@@ -144,9 +175,23 @@ border: solid 2px;
 
 
 
+/*--  Workshop Template  --*/
+
+.ct-singleCourse-introLinks .cat-links {
+  color: #333;
+}
+
+.ct-singleCourse-introLinks .cat-links i {
+  color: #333;
+}
+
+.ct-singleCourse-introLinks .entry-date {
+  color: #333;
+}
+
 
 /*--  Media Queries  --*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
 
   /*--  Navbar Position  --*/
   .nav.navbar-nav {
