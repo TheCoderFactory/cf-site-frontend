@@ -47,22 +47,22 @@
 <div class="collapse navbar-collapse ct-menuMobile ct-u-bgBlack">
     <ul class="nav navbar-nav ct-menuMobile-navbar pull-right">
         <li class="dropdown">
-            <a href="index.html">Home <span class=""></span></a>
+            <a href="index.html">Home<span class=""></span></a>
         </li>
         <li class="dropdown active">
-            <a href="webdesign.html">Workshops <span class=""></span></a>
+            <a href="webdesign.html">Workshops<span class=""></span></a>
         </li>
         <li class="dropdown">
-            <a href="parttime.html">Part Time <span class=""></span></a>
+            <a href="parttime.html">Part Time<span class=""></span></a>
         </li>
         <li class="dropdown">
-            <a href="fulltime.html">Full Time <span class=""></span></a>
+            <a href="fulltime.html">Full Time<span class=""></span></a>
         </li>
         <li class="dropdown">
-            <a href="blog.html">Blog <span class=""></span></a>
+            <a href="blog.html">Blog<span class=""></span></a>
         </li>
         <li class="dropdown">
-            <a href="contact.html">Contact Us <span class=""></span></a>
+            <a href="contact.html">Contact Us<span class=""></span></a>
         </li>
     </ul>
 </div><!-- /.navbar-collapse -->
@@ -121,12 +121,12 @@
     <div class="container">
 
         <div class="ct-tabs ct-tabs--witharrow">
-            <ul class="nav nav-tabs nav-justified ct-mytab-js" role="tablist">
-                <li><a href="webdesign.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'webDesign' }" ng-click="courses.changeWorkshop('webDesign')">Web Design</a></li>
-                <li><a href="wordpress.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'wordpress' }" ng-click="courses.changeWorkshop('wordpress')">Wordpress</a></li>
-                <li><a href="learntocode.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'learnToCode' }" ng-click="courses.changeWorkshop('learnToCode')">Learn To Code</a></li>
-                <li><a href="teenslearntocode" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'teensLearnToCode' }" ng-click="courses.changeWorkshop('teensLearnToCode')">Teens Learn To Code</a></li>
-                <li><a href="technologyforteachers" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'technologyForTeachers' }" ng-click="courses.changeWorkshop('technologyForTeachers')">Technology for Teachers</a></li>
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li ng-class="{ 'active' : courses.workshops === 'webDesign' }"><a ng-click="courses.changeWorkshop('webDesign')">Web Design</a></li>
+                <li ng-class="{ 'active' : courses.workshops === 'wordpress' }"><a ng-click="courses.changeWorkshop('wordpress')">Wordpress</a></li>
+                <li ng-class="{ 'active' : courses.workshops === 'learnToCode' }"><a ng-click="courses.changeWorkshop('learnToCode')">Learn To Code</a></li>
+                <li ng-class="{ 'active' : courses.workshops === 'teensLearnToCode' }"><a ng-click="courses.changeWorkshop('teensLearnToCode')">Teens Learn To Code</a></li>
+                <li ng-class="{ 'active' : courses.workshops === 'technologyForTeachers' }"><a ng-click="courses.changeWorkshop('technologyForTeachers')">Technology for Teachers</a></li>
             </ul>
         </div>
 

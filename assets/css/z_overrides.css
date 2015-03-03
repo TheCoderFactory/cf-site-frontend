@@ -218,7 +218,19 @@ select.form-control {
 
 .ct-iconBox--left .ct-iconBox-content, .ct-iconBox--right .ct-iconBox-content {
 /*  display: none;
-*/}
+*/
+}
+
+
+
+/*--  Fulltime Template  --*/
+.fulltime .ct-pricing .ct-pricing-content .ct-pricing-content-ul li.ct-pricing-content-ul-activesep:before {
+  color: #2C3E50 !important;
+}
+
+.fulltime .ct-iconBox-icon--circle {
+  background-color: #2C3E50;
+}
 
 /*--  Media Queries  --*/
 @media screen and (min-width: 992px) {

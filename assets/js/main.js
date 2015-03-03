@@ -212,6 +212,8 @@ angular.module('CoderFactory', [])
 	.controller('CoursesCtrl', function() {
 		var courses = this;
 
+		console.log('CourseCtrl has started');
+
 		courses.workshops = window.localStorage.workshopCourse || 'webDesign';
 
 		courses.changeWorkshop = function(course) {
@@ -221,4 +223,6 @@ angular.module('CoderFactory', [])
 		};
 
 	});
+
+
 })();
