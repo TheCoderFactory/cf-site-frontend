@@ -216,7 +216,9 @@ select.form-control {
   background-position: 50% 0px;
 }
 
-
+.ct-iconBox--left .ct-iconBox-content, .ct-iconBox--right .ct-iconBox-content {
+/*  display: none;
+*/}
 
 /*--  Media Queries  --*/
 @media screen and (min-width: 992px) {
