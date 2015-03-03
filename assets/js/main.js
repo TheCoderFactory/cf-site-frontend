@@ -206,6 +206,7 @@ function parseBoolean(str, $defaultValue) {
 
 // Angular Module
 
+(function() {
 angular.module('CoderFactory', [])
 
 	.controller('CoursesCtrl', function() {
@@ -219,5 +220,5 @@ angular.module('CoderFactory', [])
 			console.log(window.localStorage.workshopCourse);
 		};
 
-
 	});
+})();
