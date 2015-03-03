@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/z_overrides.css">
 
 
+    <script src="assets/js/angular.min.js"></script>
 
 
 
@@ -29,7 +30,7 @@
 
     <script src="assets/js/modernizr.custom.js"></script>
 </head>
-<body class="cssAnimate">
+<body class="cssAnimate" ng-controller="CoursesCtrl as courses" ng-app="CoderFactory">
 
 <!-- MOBILE NAV -->
 <div class="navbar-header ct-navbarMobile ct-u-bgBlack">
@@ -121,11 +122,11 @@
 
         <div class="ct-tabs ct-tabs--witharrow">
             <ul class="nav nav-tabs nav-justified ct-mytab-js" role="tablist">
-                <li class="active"><a href="webdesign.html" role="tab" data-toggle="tab">Web Design</a></li>
-                <li><a href="wordpress.html" role="tab" data-toggle="tab">Wordpress</a></li>
-                <li><a href="learntocode.html" role="tab" data-toggle="tab">Learn To Code</a></li>
-                <li><a href="teenslearntocode" role="tab" data-toggle="tab">Teens Learn To Code</a></li>
-                <li><a href="technologyforteachers" role="tab" data-toggle="tab">Technology for Teachers</a></li>
+                <li><a href="webdesign.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'webDesign' }" ng-click="courses.changeWorkshop('webDesign')">Web Design</a></li>
+                <li><a href="wordpress.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'wordpress' }" ng-click="courses.changeWorkshop('wordpress')">Wordpress</a></li>
+                <li><a href="learntocode.html" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'learnToCode' }" ng-click="courses.changeWorkshop('learnToCode')">Learn To Code</a></li>
+                <li><a href="teenslearntocode" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'teensLearnToCode' }" ng-click="courses.changeWorkshop('teensLearnToCode')">Teens Learn To Code</a></li>
+                <li><a href="technologyforteachers" role="tab" data-toggle="tab" ng-class="{ 'active' : courses.workshops === 'technologyForTeachers' }" ng-click="courses.changeWorkshop('technologyForTeachers')">Technology for Teachers</a></li>
             </ul>
         </div>
 
@@ -133,11 +134,11 @@
     </div><!-- /container -->
 </div>
 
-
+<section ng-switch='courses.workshops'>
 
 
 <!-- WEBDESIGN CONTAINER -->
-<div>
+<div ng-switch-when='webDesign'>
 
 <div class="ct-u-bgLightGrey ct-u-paddingBoth60 ct-u-bgGrey">
 
@@ -268,7 +269,7 @@ You will have fun!</center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                            <li class="ct-pricing-content-ul-activesep">Days: Saturday & Sunday</li>
+                            <li class="ct-pricing-content-ul-activesep">Days: Saturday &amp; Sunday</li>
                             <li class="ct-pricing-content-ul-activesep">Times: 10am - 4pm.</li>
                             <br>
                             <li class="ct-pricing-content-ul-activesep">What to bring: </li>
@@ -408,7 +409,7 @@ You will have fun!</center></li>
 
 
 <!-- WORDPRESS CONTAINER -->
-<div>
+<div ng-switch-when='wordpress'>
 <div class="ct-u-bgLightGrey ct-u-paddingBoth60 ct-u-bgGrey">
 
         <div class="container">
@@ -464,10 +465,10 @@ You will have fun!</center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>Whether you want to test your business idea or become a thought leader in your field, a Wordpress site can easily be set up to achieve these goals. <br>
 
-With the great themes and plugins available, you can even run your business with Wordpress. And although Wordpress is relatively simple compared to learning to build your own site, there are still some tricky parts to get it right. 
+With the great themes and plugins available, you can even run your business with Wordpress. And although Wordpress is relatively simple compared to learning to build your own site, there are still some tricky parts to get it right.
 <br>
 That's where this workshop can help.  </center></li>
                         </ul>
@@ -489,10 +490,10 @@ That's where this workshop can help.  </center></li>
                             <li class="ct-pricing-content-ul-activesep">Installing Themes.</li>
                             <li class="ct-pricing-content-ul-activesep">Finding great plugins to give your site extra functionality.</li>
                             <li class="ct-pricing-content-ul-activesep">Search engine optimisation.</li>
-                            <li class="ct-pricing-content-ul-activesep">Customising your site.</li>     
-                            <li class="ct-pricing-content-ul-activesep">Using a Domain Name</li>    
-                            <li class="ct-pricing-content-ul-activesep">Google Analytics to see who is using your site</li>     
-                            <li class="ct-pricing-content-ul-activesep">Google Webmaster tool for advanced tools & diagnostics</li> 
+                            <li class="ct-pricing-content-ul-activesep">Customising your site.</li>
+                            <li class="ct-pricing-content-ul-activesep">Using a Domain Name</li>
+                            <li class="ct-pricing-content-ul-activesep">Google Analytics to see who is using your site</li>
+                            <li class="ct-pricing-content-ul-activesep">Google Webmaster tool for advanced tools & diagnostics</li>
                        <br>
                         </ul>
                     </div>
@@ -513,7 +514,7 @@ That's where this workshop can help.  </center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>BLAH <br>
 
 You will have fun!</center></li>
@@ -540,7 +541,7 @@ You will have fun!</center></li>
                             <li class="ct-pricing-content-ul-activesep">Small groups of less than 12. </li>
                             <li class="ct-pricing-content-ul-activesep">An understanding of websites in simple terms.</li>
                             <li class="ct-pricing-content-ul-activesep">... You will have fun!</li>
-                     
+
                         </ul>
                     </div>
 
@@ -659,7 +660,7 @@ You will have fun!</center></li>
                     <td>$395</td>
                     <td class="text-right"><a href="#" class="btn btn-link">Book Now <i class="fa fa-angle-right"></i></a></td>
                 </tr>
- 
+
                 </tbody>
             </table>
         </div>
@@ -672,7 +673,7 @@ You will have fun!</center></li>
 
 
 <!-- LEARN TO CODE CONTAINER -->
-<div>
+<div ng-switch-when='learnToCode'>
 
 <div class="ct-u-bgLightGrey ct-u-paddingBoth60 ct-u-bgGrey">
 
@@ -730,7 +731,7 @@ You will have fun!</center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>You can either stand by and watch it happen, or be a part of it and have the power to create a great life for yourself and those around you.<br>
 
 The tech revolution is just getting warmed up. There are so many ways that technology has yet to improve our lives. Whether it's a life saving gadget or a phone app that makes us laugh. Let your creativity flow and build cool technology that makes a difference in the world.<br>
@@ -755,10 +756,10 @@ Be a part of the future. Learn to code.</center></li>
                             <li class="ct-pricing-content-ul-activesep"><b>Programming fundamentals.</b></li>
                             <li class="ct-pricing-content-ul-activesep">Learn the 5 fundamentals of computer programming and realise that anyone can do this.</li>
                             <li class="ct-pricing-content-ul-activesep"><b>Application and database design</b></li>
-                            <li class="ct-pricing-content-ul-activesep">Understanding these processes helps you build great apps that people love to use. </li>     
-                            <li class="ct-pricing-content-ul-activesep"><b>Ruby on Rails - the greatest web application framework</b></li>    
-                            <li class="ct-pricing-content-ul-activesep">Build a web application that you'll be proud to show your friends.</li>     
-                        
+                            <li class="ct-pricing-content-ul-activesep">Understanding these processes helps you build great apps that people love to use. </li>
+                            <li class="ct-pricing-content-ul-activesep"><b>Ruby on Rails - the greatest web application framework</b></li>
+                            <li class="ct-pricing-content-ul-activesep">Build a web application that you'll be proud to show your friends.</li>
+
                        <br>
                         </ul>
                     </div>
@@ -779,7 +780,7 @@ Be a part of the future. Learn to code.</center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>BLAH <br>
 
 You will have fun!</center></li>
@@ -806,7 +807,7 @@ You will have fun!</center></li>
                             <li class="ct-pricing-content-ul-activesep">Small groups of less than 12. </li>
                             <li class="ct-pricing-content-ul-activesep">An understanding of WebApps in simple terms.</li>
                             <li class="ct-pricing-content-ul-activesep">... You will have fun!</li>
-                     
+
                         </ul>
                     </div>
 
@@ -926,7 +927,7 @@ You will have fun!</center></li>
                     <td>$395</td>
                     <td class="text-right"><a href="#" class="btn btn-link">Book Now <i class="fa fa-angle-right"></i></a></td>
                 </tr>
- 
+
                 </tbody>
             </table>
         </div>
@@ -940,7 +941,7 @@ You will have fun!</center></li>
 
 <!-- TEENS LEARN TO CODE CONTAINER -->
 
-<div>
+<div ng-switch-when='teensLearnToCode'>
 
 <div class="ct-u-bgLightGrey ct-u-paddingBoth60 ct-u-bgGrey">
 
@@ -998,7 +999,7 @@ You will have fun!</center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>Coding is fun for everyone and this workshop is open to anyone to high schoolers between the ages of 13 and 17. <br>
 
 Knowing how to code is going to help you do better in school, give you more options when choosing your career, and could even start you on your way to earning more money than your parents, before you leave school! <br>
@@ -1023,10 +1024,10 @@ Be a part of the future. Learn to code. </center></li>
                             <li class="ct-pricing-content-ul-activesep"><b>Programming.</b></li>
                             <li class="ct-pricing-content-ul-activesep">Learn the 5 fundamentals of computer programming and realise that anyone can do this. </li>
                             <li class="ct-pricing-content-ul-activesep"><b>Web application development </b></li>
-                            <li class="ct-pricing-content-ul-activesep">Build an app that shows you how easy it is to build your own version of Instagram. </li>     
-                            <li class="ct-pricing-content-ul-activesep"><b>Ruby on Rails - the best web application framework</b></li>    
-                            <li class="ct-pricing-content-ul-activesep">Build a web application that you and your mates will be able to use.</li>     
-                        
+                            <li class="ct-pricing-content-ul-activesep">Build an app that shows you how easy it is to build your own version of Instagram. </li>
+                            <li class="ct-pricing-content-ul-activesep"><b>Ruby on Rails - the best web application framework</b></li>
+                            <li class="ct-pricing-content-ul-activesep">Build a web application that you and your mates will be able to use.</li>
+
                        <br>
                         </ul>
                     </div>
@@ -1047,7 +1048,7 @@ Be a part of the future. Learn to code. </center></li>
                     <div class="ct-pricing-content">
 
                         <ul class="ct-pricing-content-ul">
-                        
+
                             <li><center>BLAH <br>
 
 You will have fun!</center></li>
@@ -1074,7 +1075,7 @@ You will have fun!</center></li>
                             <li class="ct-pricing-content-ul-activesep">Small groups of less than 12. </li>
                             <li class="ct-pricing-content-ul-activesep">An understanding of WebApps in simple terms.</li>
                             <li class="ct-pricing-content-ul-activesep">... You will have fun!</li>
-                     
+
                         </ul>
                     </div>
 
@@ -1194,7 +1195,7 @@ You will have fun!</center></li>
                     <td>$286</td>
                     <td class="text-right"><a href="#" class="btn btn-link">Book Now <i class="fa fa-angle-right"></i></a></td>
                 </tr>
- 
+
                 </tbody>
             </table>
         </div>
@@ -1213,7 +1214,7 @@ You will have fun!</center></li>
 </div>
 
 
-
+</section>
 
 
 <div class="ct-u-paddingBottom30 ct-u-bgGrey workshop">
@@ -1230,7 +1231,7 @@ You will have fun!</center></li>
                             <li>
                                 <div class="row">
 
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" ng-hide="courses.workshops === 'learnToCode'">
                                       <article class="ct-coursesList ct-u-bgWhite">
                                           <div class="ct-courseList-image">
                                               <a href="LEARNTOCODE.HTML"><img src="http://res.cloudinary.com/coder-factory/image/upload/c_scale,w_401/v1421879436/qetzogehrzzfrcsntvkk.png" alt="Learn to Code"></a>
@@ -1249,7 +1250,7 @@ You will have fun!</center></li>
                                       </article>
                                   </div>
 
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" ng-hide="courses.workshops === 'teensLearnToCode'">
                                       <article class="ct-coursesList ct-u-bgWhite">
                                           <div class="ct-courseList-image">
                                             <img src="http://coderfactory.co/assets/highschool-0d8cca78e95dc787bfe89bac1d632efb.jpg" alt="Highschoolers">
@@ -1268,7 +1269,7 @@ You will have fun!</center></li>
                                       </article>
                                   </div>
 
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" ng-hide="courses.workshops === 'technologyForTeachers'">
                                       <article class="ct-coursesList ct-u-bgWhite">
                                           <div class="ct-courseList-image">
                                             <img src="http://res.cloudinary.com/coder-factory/image/upload/bo_0px_solid_rgb:000,c_fill,h_270,w_410/v1424044389/teachers-technology_k5w6er.jpg" alt="Technology for Teachers">
@@ -1295,7 +1296,7 @@ You will have fun!</center></li>
 
                                  <div class="row">
 
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" ng-hide="courses.workshops === 'wordpress'">
                                       <article class="ct-coursesList ct-u-bgWhite">
                                           <div class="ct-courseList-image">
                                               <a href="wordpress.html"><img src="http://res.cloudinary.com/coder-factory/image/upload/v1425106315/http_coderfactory.co_assets_wordpress-8d7041f0c3835aa714391506ed32abdc_r1pj8u.png" alt="Wordpress"></a>
@@ -1314,7 +1315,7 @@ You will have fun!</center></li>
                                       </article>
                                   </div>
 
-                                  <div class="col-sm-4">
+                                  <div class="col-sm-4" ng-hide="courses.workshops === 'webDesign'">
                                       <article class="ct-coursesList ct-u-bgWhite">
                                           <div class="ct-courseList-image">
                                             <img src="http://res.cloudinary.com/coder-factory/image/upload/v1421384765/webdesign3_x1ngh6.png" alt="Web Design">

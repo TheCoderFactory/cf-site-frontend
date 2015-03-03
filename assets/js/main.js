@@ -11,10 +11,10 @@ var isiPad = (navigator.userAgent.match(/iPad/i) != null);
 
 $.fn.isAfter = function (sel) {
 	return this.prevAll(sel).length !== 0;
-}
+};
 $.fn.isBefore = function (sel) {
 	return this.nextAll(sel).length !== 0;
-}
+};
 
 
 var $bodyel = jQuery("body");
@@ -27,7 +27,7 @@ var $topbarel = jQuery(".ct-topBar");
 function validatedata($attr, $defaultValue) {
     "use strict";
     if ($attr !== undefined) {
-        return $attr
+        return $attr;
     }
     return $defaultValue;
 }
@@ -62,7 +62,7 @@ function parseBoolean(str, $defaultValue) {
 
 	    $(".ct-js-color").each(function(){
 	        $(this).css("color", '#' + $(this).attr("data-color"));
-		})
+		});
 
 
 
@@ -196,3 +196,28 @@ function parseBoolean(str, $defaultValue) {
 
 
 })(jQuery);
+
+
+
+
+
+
+
+
+// Angular Module
+
+angular.module('CoderFactory', [])
+
+	.controller('CoursesCtrl', function() {
+		var courses = this;
+
+		courses.workshops = window.localStorage.workshopCourse || 'webDesign';
+
+		courses.changeWorkshop = function(course) {
+			courses.workshops = course;
+			window.localStorage.workshopCourse = course;
+			console.log(window.localStorage.workshopCourse);
+		};
+
+
+	});
