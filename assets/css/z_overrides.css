@@ -221,6 +221,15 @@ select.form-control {
 */
 }
 
+.ct-iconBox--bgDark .ct-iconBox-icon
+{
+  border-color: #333;
+}
+
+.ct-iconBox--bgDark .ct-iconBox-icon i
+{
+  color: #333;
+}
 
 
 /*--  Fulltime Template  --*/

@@ -2196,7 +2196,7 @@ footer {
   color: #fff;
   font-size: 12px;
   background: transparent;
-  font-family: 'BrandomGrotesque-reg', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -7016,7 +7016,7 @@ ul.list-with-icons ol {
 }
 .ct-iconBox-content {
   word-break: break-word;
-  font-family: 'BrandomGrotesque-reg', sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 .ct-iconBox-content p {
   line-height: 27px;
@@ -7049,7 +7049,7 @@ ul.list-with-icons ol {
 }
 .ct-iconBox--default .ct-iconBox-content .ct-iconBox-title,
 .ct-iconBox--iconBg .ct-iconBox-content .ct-iconBox-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 0 0 25px;
 }
@@ -7424,7 +7424,7 @@ blockquote,
 .ct-blockquote--withArrow .small {
   position: absolute;
   bottom: -43px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #c0c1c1;
   transition: all 0.7s;
@@ -7486,7 +7486,7 @@ blockquote + blockquote {
   line-height: 1;
   margin: 0px;
   padding-top: 13px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #000;
 }
@@ -8371,7 +8371,7 @@ table.ct-table--withBorder .btn {
   color: white;
   text-transform: uppercase;
   font-size: 17px;
-  font-family: 'BrandomGrotesque-reg', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   padding-bottom: 30px;
 }
 .ct-widget-adress {
@@ -8482,7 +8482,7 @@ table.ct-table--withBorder .btn {
 }
 .ct-u-ulMotiveLinks li a {
   color: #3eaefa !important;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px !important;
 }
@@ -10171,7 +10171,7 @@ div[class^='col-']:first-child .ct-coursesList--withSecundaryBox .ct-coursesList
   margin-bottom: 25px;
 }
 .by-author span {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #c0c1c1;
   transition: all 0.7s;
@@ -10572,7 +10572,7 @@ div[class^='col-']:first-child .ct-coursesList--withSecundaryBox .ct-coursesList
   padding-top: 35px;
 }
 .ct-graphBox-content--default .ct-graphBox-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 0 0 25px;
 }
@@ -10628,7 +10628,7 @@ div[class^='col-']:first-child .ct-coursesList--withSecundaryBox .ct-coursesList
   padding-top: 20px;
 }
 .ct-teamBox .ct-teamBox-content .ct-teamBox-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.2;
@@ -11352,7 +11352,7 @@ video {
   left: 0;
   text-transform: uppercase;
   color: #1e2223 !important;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 19px;
   font-weight: 700;
   padding-left: 18px;
@@ -11483,7 +11483,7 @@ video {
   min-height: 190px;
 }
 .ct-teachersBox .ct-teachersBox-content .ct-teachersBox-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   padding: 0;
   margin: 0;
@@ -11989,7 +11989,7 @@ a.ct-kindOfPost-icon:focus i {
   opacity: 0.6;
   opacity: 1;
   filter: alpha(opacity=100);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .ct-courseHour {
   font-size: 22px;
